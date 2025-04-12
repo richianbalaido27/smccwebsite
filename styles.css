@@ -1,3 +1,6 @@
+
+
+
 /* General Reset */
 * {
     margin: 0;
@@ -8,96 +11,47 @@
 /* Body Styling with Background Image */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('smcc.png'); /* Replace with the path to your image */
+    background-image: url('smcc-bg.png');
     background-size: cover;
     background-position: center;
     color: #070831;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header Styling */
-header {
-    background-color: rgba(24, 123, 221, 0.8); /* Semi-transparent dark background */
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-}
-
-nav a:hover {
-    background-color: #2479cd;
-    border-radius: 5px;
-}
-
-/* Section Styling */
+/* Add spacing for all sections */
 section {
-    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 20px 0;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for readability */
+    background-color: rgba(255, 255, 255, 0.8); 
     border-radius: 8px;
 }
 
-h2 {
-    color: #2f00ff;
-    margin-bottom: 10px;
-}
-
-/* Footer Styling */
-footer {
-    background-color: rgba(4, 22, 112, 0.8); /* Semi-transparent footer background */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-
-/* General Body Styling */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
 /* Header Styling */
 header {
-    position: relative; /* Allows absolute positioning of elements within */
-    background-color: rgba(34, 3, 236, 0.744); /* Semi-transparent background */
+    position: relative;
+    background-color: rgba(34, 3, 236, 0.744); 
     padding: 20px;
     color: rgb(236, 248, 3);
+    text-align: center;
 }
 
 /* Logo Styling */
 .logo {
-    position: absolute; /* This takes the logo out of the normal flow and allows it to be positioned */
-    top: 20px; /* Adjust the distance from the top */
-    left: 20px; /* Adjust the distance from the left */
-    width: 50px; /* Adjust to your desired logo size */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px; 
     height: auto;
 }
 
 /* Header Title Styling */
 header h1 {
-    margin-left: 70px; /* Adds space for the logo */
+    margin-left: 70px; 
     padding-top: 10px;
 }
 
@@ -120,16 +74,34 @@ nav a:hover {
     background-color: #7a74c0;
     border-radius: 5px;
 }
+
+/* Headings */
+h2 {
+    color: #2f00ff;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(4, 22, 112, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* About Section Styling */
 .about-section {
     max-width: 900px;
     margin: 0 auto;
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(158, 27, 27, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #333333;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .about-section h2 {
@@ -158,18 +130,5 @@ nav a:hover {
 }
 
 .about-section li {
-    margin-bottom: 10px;
-}
-.about-section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333333;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    margin-bottom: 10px;    
 }
